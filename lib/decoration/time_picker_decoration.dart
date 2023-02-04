@@ -45,7 +45,9 @@ class TimePickerDecoration extends StatefulWidget {
 
   /// See also: TimePickerHandlerDecoration
   final TimePickerHandlerDecoration endHandlerDecoration;
-
+  @override
+  _TimePickerDecorationState createState() => _TimePickerDecorationState();
+  
   TimePickerDecoration({
     Key? key,
     required this.sweepDecoration,
