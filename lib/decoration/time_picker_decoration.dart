@@ -7,7 +7,7 @@ import '../decoration/time_picker_sweep_decoration.dart';
 ///
 /// used to decorate the TimePicker widget.
 ///
-class TimePickerDecoration {
+class TimePickerDecoration extends StatefulWidget {
   /// defines the background color of the picker
   /// Default Value: [Colors.cyanAccent]
   final Color baseColor;
