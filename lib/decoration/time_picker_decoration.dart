@@ -47,6 +47,7 @@ class TimePickerDecoration {
   final TimePickerHandlerDecoration endHandlerDecoration;
 
   TimePickerDecoration({
+    Key? key,
     required this.sweepDecoration,
     required this.initHandlerDecoration,
     required this.endHandlerDecoration,
@@ -55,7 +56,7 @@ class TimePickerDecoration {
     this.primarySectorsDecoration,
     this.secondarySectorsDecoration,
     this.clockNumberDecoration,
-  });
+  }) : super(key: key);
 
   TimePickerDecoration copyWith({
     TimePickerSweepDecoration? sweepDecoration,
