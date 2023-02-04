@@ -7,7 +7,7 @@ import '../decoration/time_picker_sweep_decoration.dart';
 ///
 /// used to decorate the TimePicker widget.
 ///
-class TimePickerDecoration extends StatefulWidget {
+class TimePickerDecoration {
   /// defines the background color of the picker
   /// Default Value: [Colors.cyanAccent]
   final Color baseColor;
@@ -45,11 +45,8 @@ class TimePickerDecoration extends StatefulWidget {
 
   /// See also: TimePickerHandlerDecoration
   final TimePickerHandlerDecoration endHandlerDecoration;
-  @override
-  _TimePickerDecorationState createState() => _TimePickerDecorationState();
   
   TimePickerDecoration({
-    Key? key,
     required this.sweepDecoration,
     required this.initHandlerDecoration,
     required this.endHandlerDecoration,
@@ -58,7 +55,7 @@ class TimePickerDecoration extends StatefulWidget {
     this.primarySectorsDecoration,
     this.secondarySectorsDecoration,
     this.clockNumberDecoration,
-  }) : super(key: key);
+  });
 
   TimePickerDecoration copyWith({
     TimePickerSweepDecoration? sweepDecoration,
